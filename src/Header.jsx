@@ -14,7 +14,7 @@ export default () => {
           onClick={clear}
           className="bg-indigo-800 text-white font-bold py-2 px-4 rounded"
         >
-          Clear LIst
+          Clear List
         </button>
       </div>
     </header>
