@@ -44,7 +44,7 @@ module.exports = (_,argv)=>({
       name: "nav",
       filename: "remoteEntry.js",
       remotes: {
-        store: "store@https://todolist-head.vercel.app/remoteEntry.js",
+        store: "store@https://todolist-nav.vercel.app/remoteEntry.js",
       },
       exposes: {
         "./Header": "./src/Header",
