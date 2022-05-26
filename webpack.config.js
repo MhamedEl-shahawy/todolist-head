@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = (_,argv)=>({
   output: {
-    publicPath: argv.mode === "development" ? "http://localhost:3001/":"https://todolist-head.vercel.app",
+    publicPath: argv.mode === "development" ? "http://localhost:3001/":"https://todolist-head.vercel.app/",
   },
 
   resolve: {
@@ -44,7 +44,7 @@ module.exports = (_,argv)=>({
       name: "nav",
       filename: "remoteEntry.js",
       remotes: {
-        store: "store@https://todolist-nav.vercel.app/remoteEntry.js",
+        store: "store@https://todolist-head.vercel.app/remoteEntry.js",
       },
       exposes: {
         "./Header": "./src/Header",
