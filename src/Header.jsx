@@ -6,7 +6,7 @@ export default () => {
   const { count, clear } = useStore();
   return (
     <header className="bg-blue-700 text-white font-bold text-3xl p-5 flex">
-      <div class="flex-grow">Todo List</div>
+      <div className="flex-grow">Todo List</div>
       <div>
         {count}
 
